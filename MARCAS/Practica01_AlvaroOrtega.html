@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <meta charset="utf-8" />
+        <title>El Corte Perfecto</title>
+    </head>
+	
+	<body>	
+        <h1> INCRIPCIÓN DE CLIENTES </h1>
+
+		<table border="1">
+        			<tr>
+				<td rowspan="2">TIPO DE INDUSTRIA</td>
+				<td colspan="3"> ORDEN POR FACTURACIÓN EN</td> 
+			</tr>
+			<tr> 
+				<td>ESPAÑA</td> 
+				<td>EUROPA</td> 
+				<td>AMÉRICA</td> 
+			</tr>
+			<tr>
+				<td>Textil</td> 
+				<td>1</td> 
+				<td>2</td> 
+				<td>3</td>
+			</tr>
+		</table>
+		
+		<form id="practica01" method="post" action="#">
+		
+			<fieldset>
+			<legend> <strong> Datos Personales </strong> </legend>
+			<p>Nombre: <input type="text" name="nombre" placeholder="Introduce tu nombre" autofocus ></p>
+			<p>Apellidos: <input type="text" name="apellidos" placeholder="Introduce tus apellidos"></p>
+			<p>Continente: <input type="text" name="continente" placeholder="Introduce tu continente" pattern=[Europa|America]></p>
+			<p>País: <input type="text" name="pais" placeholder="Introduce tus apellidos"></p>
+			<p>Ciudad: <input type="text" name="ciudad" placeholder="Introduce tu ciudad"></p>
+			<p>Email: <input type="email" name="correo" placeholder="Introduce tu correo"></p>
+			</fieldset>
+
+			<fieldset>
+			<legend> <strong> Gustos Textiles y Envío </strong> </legend>
+			<p>Preferencia de Ropa: <br />
+				<input type="radio" id="masculina" name="ropa" value="#" />Masculina
+				<input type="radio" id="femenina" name="ropa" value="#" />Femenina
+				<input type="radio" id="unisex" name="ropa" value="#" />Unisex
+			</p>	
+			<p>Tallas usadas en el hogar: <br />
+				<input type="checkbox" name="tallas"/>XS
+				<input type="checkbox" name="tallas"/>S
+				<input type="checkbox" name="tallas"/>M
+				<input type="checkbox" name="tallas"/>L
+				<input type="checkbox" name="tallas"/>XL
+				<input type="checkbox" name="tallas"/>XXL
+				<input type="checkbox" name="tallas"/>XXXL
+			</p>		
+			<p>Prendas Preferidas: 
+				<input type="text" name="pref" list="prefes"/>
+				<datalist id="prefes">
+					<option value="Pantalones" />
+					<option value="Faldas" />
+					<option value="Blusas" />
+					<option value="Cazadoras" />
+					<option value="Abrigos " />
+				</datalist>
+			</p>	
+			<p>Envío: <br />
+				<select name="envio" size="8">
+				<optgroup label="Recogida en Mano"> <!-- Primer grupo (Recogida en mano) -->  
+					<option value="tienda">En Tienda</option>  
+					<option value="correos">En Oficina de Correos</option>  
+				</optgroup> <!-- Cierre del grupo "Recogida en mano"--> 
+				
+				<optgroup label="Envío a Domicilio"><!-- Segundo grupo (a Domicilio) -->  
+					<option value="avion">Por avión</option>  
+					<option value="barco">Por barco</option>  
+					<option value="tren">Por tren</option> 
+					<option value="camion">Por camión</option> 
+				</optgroup> <!-- Cierre del grupo "a Domicilio"--> 
+            </select> 
+			</p>		
+			</fieldset>
+			
+			<fieldset>
+			<legend> <strong> Observaciones </  strong> </legend>
+				<textarea id="observacion" cols="90" rows="30"></textarea>
+			</fieldset>
+
+    <p>
+        <input type=”submit” value="Enviar Datos a Central" />
+        <input type=“reset” value="Borrar Datos del Formulario" /> 
+    </p>
+			
+			
+		</form>
+		
+		
+	</body>

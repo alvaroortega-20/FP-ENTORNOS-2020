@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <meta charset='utf-8'/>
+        <title>PRUEBAS</title>
+    <head/>
+    <body>
+        <form id="miForm" action="#" method="post" enctype="multipart/form-data">
+            <input type="text" id="nombre" pattern="^[D-M]\d{2}[a-z]+@$" 
+            <input type="text" id="etiqueta" pattern="^festin\s\d[3-5]\w$/" 
+            placeholder="[D-M]2Num[a-z]1 o más acabar en @"/>
+            <input type="number" min="50" max="200" steps="5" placeholder="Numero de serie"/><br/>
+            <input type="range" min="0" max="100" step="2" /><br/>
+            <input type="date" autofocus /><br/>
+            Semana: <input type="week" />
+            Color: <input type="color" value="#1201BC"/>
+            <input type="file" id="ficheros" multiple accept=".pdf,.docx,.zip,.jpg,.jpeg"/>
+            <br /><br />
+            <label><input type="checkbox" id="zapatos" checked />ZAPATOS</label><br />  
+            <label><input type="checkbox" id="pantalon" />PANTALÓN</label><br />
+            <label><input type="checkbox" id="blusa" />BLUSA</label>
+            <br /><br />
+            <input type="radio" id="zapato" name="prendas" value="zapatosTacon" />ZAPATOS<br />
+            <input type="radio" id="pantalón" name="prendas" value="pantalon" checked />PANTALÓN<br />
+            <input type="radio" id="blusa" name="prendas" value="blusa" />BLUSA<br />
+            <input type="hidden" id="oculto" value="dm1e" />
+            <textarea id="observacion" cols="30" rows="20"></textarea>
+
+<!--- CAMPOS DE SELECCIÓN --->
+
+<select id="menu" multiple size="5">
+
+<!---
+    <option value="o1">Ordenador1</option>
+    <option value="i1">Impresora1</option>
+    <option value="r1">Ratón1</option>
+    <option value="o2">Ordenador2</option>
+    <option value="i2">Impresora2</option>
+    <option value="r2">Ratón2</option> 
+</select> --->
+
+    <optgroup label="Ordenadores">
+        <option value="o1">Ordenador1</option>
+        <option value="o2">Ordenador2</option>
+    </optgrouop>
+    <optgroup label="Impresoras">
+        <option value="i1">Impresora1</option>
+        <option value="i2">Impresora2</option>
+    </optgrouop>    
+    <optgroup label="Ratones">
+        <option value="r1">Ratón1</option>
+        <option value="r2">Ratón2</option>
+    </optgrouop>
+ </select>   
+
+    
+
+
+
+        </form>
+    </body>
+    
+</html>
